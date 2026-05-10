@@ -35,3 +35,5 @@ class Solution {
         return false;
     }
 }
+// T.C -> O(n1) + O((n2 - n1) * n1 * n1)
+// S.C -> O(n1) + O(n1) =~ O(1)
