@@ -42,3 +42,27 @@ class Solution {
         return output;
     }
 }
+
+/**
+T.C → O(m² × n)
+
+Building freqMap → O(n)
+Outer loop → O(m) times
+
+Copy freqMap to temp → O(n)
+Inner loop → O(m)
+checkMapValues → O(n) each call
+
+
+
+Total → O(n) + O(m × (n + m × n))
+Simplifies to O(m² × n)
+
+S.C → O(m + n)
+
+freqMap → O(n)
+temp → O(n) (only one exists at a time)
+string → O(m)
+
+Total → O(m + n)
+**/
